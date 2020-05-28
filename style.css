@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 20px;
+    height: 100vh;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+table{
+    margin: auto;
+    margin-top: 50px;
+}
+table, td{
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+}
+td{
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    font: normal 52px 'Tahoma', sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+.umumi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.ichi{
+    display: flex;
+    flex-direction: column;
+}
+.iki{
+    margin-top: 50px;
+}
+span{
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 900;
+}
+input{
+    border: 1px solid white;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background: none;
+}
+button{
+    border: 1px solid blueviolet;
+    background: none;
+    border-radius: 10px;
+    text-align: center;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 20px;
+    max-width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    opacity: 1;
+}
+button:hover{
+    opacity: .5;
+}
+@media only screen and (max-width:768px){
+    body{
+        background-size: auto;
+    }
+    .ichi{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .umumi{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
