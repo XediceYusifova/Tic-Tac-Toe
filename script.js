@@ -63,7 +63,7 @@ function Yoxla(){
             document.getElementById("input1").value = xal1;
             say = 1;
         }
-        else if(M[0][0] == o){
+        else if(M[0][2] == o){
             xal2++;
             document.getElementById("input2").value = xal2;
             say = 1;
@@ -79,7 +79,7 @@ function Yoxla(){
                 document.getElementById("input1").value = xal1;
                 say = 1;
             }
-            else if(M[0][0] == o){
+            else if(M[i][0] == o){
                 xal2++;
                 document.getElementById("input2").value = xal2;
                 say = 1;
@@ -96,7 +96,7 @@ function Yoxla(){
                 document.getElementById("input1").value = xal1;
                 say = 1;
             }
-            else if(M[0][0] == o){
+            else if(M[0][i] == o){
                 xal2++;
                 document.getElementById("input2").value = xal2;
                 say = 1;
